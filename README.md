@@ -10,7 +10,14 @@ The data produced by Orthofinder contains a distinction between genes in each sp
 amino acid content of orthologous and non-orthologous genes are then counted to produce frequency comparisons for each species to then deduce trends and niches within each species based on their climate, diet, and amino acid content of genes.
 
 ## Description of files in repository:
- (describe the files and their purposes in the repository)
+The main Orthogroup python file is Orthogroup_counter.py while for non-orthologous genes there are two python files as Orthofinder organizes the non-orthologous gene results differently from the orthologous gene results.
 
 ### Orthogroup_counter.py
 This file produces a list of amino acid frequency in each othrologous gene for each species. 
+
+### nonortholog_seqs.py
+This file collates non-orth seq data from multiple columns into one colum and gathers frequency of amino acids
+
+### non_orth_summary.py
+Reads data produced by nonortholog_seqs.py ('nonorth_seq_and_aa.csv') and assigns them to species that contain those genes. 
+
