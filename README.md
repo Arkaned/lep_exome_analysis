@@ -11,3 +11,6 @@ amino acid content of orthologous and non-orthologous genes are then counted to 
 
 ## Description of files in repository:
  (describe the files and their purposes in the repository)
+
+### Orthogroup_counter.py
+This file produces a list of amino acid frequency in each othrologous gene for each species. 
