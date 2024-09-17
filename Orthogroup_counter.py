@@ -1,3 +1,8 @@
+# @author: Arkaned
+# date: May, 2024
+# Purpose: produces a list of amino acid content for each orthologous gene in each species. 
+
+
 from Bio import SeqIO
 from collections import Counter
 import os
@@ -36,7 +41,7 @@ def process_directory(directory):
     return aa_content_dict
 
 # example usage
-directory_path = "/home/arkaned/tyota__ju_lle/orthofinder_tutorial/Exomes/primary_transcripts/OrthoFinder/Results_May15/Orthogroup_Sequences/"
+directory_path = "/orthofinder_tutorial/Exomes/primary_transcripts/OrthoFinder/Results_May15/Orthogroup_Sequences/"
 amino_acid_content = process_directory(directory_path)
 
 sum_of_all_genes = 0
